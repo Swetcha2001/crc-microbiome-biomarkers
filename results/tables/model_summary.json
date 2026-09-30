@@ -1,0 +1,32 @@
+{
+  "RandomForest": {
+    "cv_auc_mean": 0.7962,
+    "cv_auc_sd": 0.0197,
+    "loso_auc_mean": 0.7782,
+    "loso_auc_min": 0.6368,
+    "loso_auc_max": 0.8621
+  },
+  "L1-LogisticRegression": {
+    "cv_auc_mean": 0.792,
+    "cv_auc_sd": 0.0243,
+    "loso_auc_mean": 0.7799,
+    "loso_auc_min": 0.6564,
+    "loso_auc_max": 0.8644
+  },
+  "n_samples": 1104,
+  "n_crc": 574,
+  "n_genera": 169,
+  "selected_features_k": 40,
+  "top_shap_genera": [
+    "Peptostreptococcus",
+    "Parvimonas",
+    "Fusobacterium",
+    "Porphyromonas",
+    "Parabacteroides",
+    "Clostridium",
+    "Lachnoclostridium",
+    "Gordonibacter",
+    "Faecalicatena",
+    "Agathobaculum"
+  ]
+}

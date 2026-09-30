@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test-and-reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Unit tests
+        run: pytest -q tests
+      - name: Rebuild matrix and differential abundance from committed raw profiles
+        run: |
+          python scripts/02_build_matrix.py
+          python scripts/03_differential_abundance.py
+      - name: Reproduce classification results
+        run: python scripts/04_classify.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: results
+          path: results/

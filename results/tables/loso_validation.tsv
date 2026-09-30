@@ -1,0 +1,17 @@
+model	held_out	n	n_case	AUC	AUPRC	cohort
+RandomForest	PRJEB10878	128	74	0.8621	0.8948	China-HK
+RandomForest	PRJEB12449	104	52	0.6368	0.6544	USA
+RandomForest	PRJEB27928	82	22	0.8553	0.7700	Germany
+RandomForest	PRJEB6070	199	133	0.6627	0.8333	France
+RandomForest	PRJEB7774	107	46	0.7830	0.7688	Austria
+RandomForest	PRJNA447983	113	61	0.8190	0.8685	Italy
+RandomForest	PRJNA731589	171	86	0.8155	0.8558	China-1
+RandomForest	PRJNA763023	200	100	0.7916	0.7871	China-2
+L1-LogisticRegression	PRJEB10878	128	74	0.8529	0.8835	China-HK
+L1-LogisticRegression	PRJEB12449	104	52	0.6564	0.6769	USA
+L1-LogisticRegression	PRJEB27928	82	22	0.8644	0.7800	Germany
+L1-LogisticRegression	PRJEB6070	199	133	0.6941	0.8429	France
+L1-LogisticRegression	PRJEB7774	107	46	0.7463	0.7459	Austria
+L1-LogisticRegression	PRJNA447983	113	61	0.8008	0.8543	Italy
+L1-LogisticRegression	PRJNA731589	171	86	0.8373	0.8748	China-1
+L1-LogisticRegression	PRJNA763023	200	100	0.7871	0.7750	China-2
